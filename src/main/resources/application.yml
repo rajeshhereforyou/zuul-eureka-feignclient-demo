@@ -1,0 +1,8 @@
+zuul:
+  debug:
+    request: true
+  routes:
+    route1:
+      path: /home/**
+      strip-prefix: false
+      url: http://www.google.com
