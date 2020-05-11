@@ -1,5 +1,5 @@
-# zuul-demo
-Sample Zuul to route your rest call to redirect to open google.com
+# What is this app
+This is a simple Spring boot 2 app demonstrating integration of zuul, Eureka and Feign Client
 
 ## Pre-requisite
 
@@ -7,6 +7,8 @@ Sample Zuul to route your rest call to redirect to open google.com
 You can find the instructions and code to build and deploy a sample Eureka server using Spring Boot 2 at 
 
 https://github.com/rajeshhereforyou/eureka-server-demo 
+
+2. You need a Spring boot 2 app with a Feign client 
 
 ## How to run this app?
 
@@ -22,3 +24,7 @@ Step 5: Now, to test the Zuul routing, if you hit 'http://localhost:9090/home', 
 
 
 If you are interested to see the zuul routing configuration, you can see the code at '/src/main/resources/application.yml' in this repo
+
+## How the Zuul, Eureka and Feign is working together
+
+If you hit http://localhost:9090/test-feign/user/1, then it should hit the endpoint '/user/{userId}' of 'EurekaFeignClientDemoApplication' app based on the zuul routing specified at '/src/main/resources/application.yml' and execute that method
