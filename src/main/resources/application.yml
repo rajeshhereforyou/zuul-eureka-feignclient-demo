@@ -1,3 +1,9 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
 zuul:
   debug:
     request: true
@@ -6,3 +12,10 @@ zuul:
       path: /home/**
       strip-prefix: false
       url: http://www.google.com
+    EurekaFeignClientDemoApplication:
+      path: /test-feign/**
+      strip-prefix: true
+      serviceId: EurekaFeignClientDemoApplication
+  host:
+    connect-timeout-millis: 5000000
+    socket-timeout-millis: 5000000
