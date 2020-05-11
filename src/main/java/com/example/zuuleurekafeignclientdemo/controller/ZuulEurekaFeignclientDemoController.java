@@ -11,7 +11,7 @@ public class ZuulEurekaFeignclientDemoController {
         return "Hello from ZuulDemoController";
     }
 
-    @RequestMapping(value = "/target")
+    @RequestMapping(value = "/test-feign")
     public String targetURL() {
         return "Hello from Target method of ZuulDemoController";
     }
