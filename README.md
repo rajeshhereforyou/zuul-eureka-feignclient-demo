@@ -1,7 +1,14 @@
 # zuul-demo
 Sample Zuul to route your rest call to redirect to open google.com
 
-##How to run this app?
+## Pre-requisite
+
+1. Before running this app, you have to make sure that you have the a sample Eureka server is up and running. 
+You can find the instructions and code to build and deploy a sample Eureka server using Spring Boot 2 at 
+
+https://github.com/rajeshhereforyou/eureka-server-demo 
+
+## How to run this app?
 
 Step 1: Clone this repo at  https://github.com/rajeshhereforyou/zuul-demo.git
 
